@@ -4,11 +4,10 @@ NOTE: the V1 board is still on its way to me as of 23/03/2020, so still untested
 A device that sends USB and DIN MIDI messages using four footswitches, a sustain pedal and an expression pedal as the interface. This project is a very easy DIY build that consists of very few through-hole components, recommended for beginners!
 
 ## Software
+Requirements: Bounce2 library, MIDI library (found in Arduino IDE library manager).
 
-### Requirements
-Bounce2 library, MIDI library (found in Arduino IDE library manager).
-### Configuration
 Change settings in config.h file to set custom MIDI messages, then compile.
+
 ## Foot switches 
 They send a note on MIDI message when pressed, and a note off message when released.
 
