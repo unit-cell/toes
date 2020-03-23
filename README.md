@@ -6,7 +6,7 @@ A device that sends USB and DIN MIDI messages using four footswitches, a sustain
 ## Software
 Requirements: Bounce2 library, MIDI library (found in Arduino IDE library manager).
 
-Change settings in config.h file to set custom MIDI messages, then compile.
+To set custom MIDI messages, change settings in config.h file and then compile.
 
 ## Foot switches 
 They send a note on MIDI message when pressed, and a note off message when released.
