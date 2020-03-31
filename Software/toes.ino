@@ -115,4 +115,7 @@ void loop() {
       MIDI.sendControlChange(midi_cc, cc_mapped, midi_out_channel);
     }
   }
+  while (usbMIDI.read()) {
+  // ignore incoming messages
+  }
 }
