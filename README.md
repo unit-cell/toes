@@ -1,6 +1,14 @@
 # toes
 A device that sends USB and DIN MIDI messages using four footswitches, a sustain pedal and an expression pedal as the interface. This project is a very easy DIY build that consists of very few through-hole components, recommended for beginners!
 
+
+![alt text](https://github.com/unit-cell/toes/blob/master/Images/front.jpg "front")
+
+
+![alt text](https://github.com/unit-cell/toes/blob/master/Images/pcb.jpg "pcb")
+
+![alt text](https://github.com/unit-cell/toes/blob/master/Images/pedals.jpg "pedals")
+
 ## Software
 Requirements: Bounce2 library, MIDI library (found in Arduino IDE library manager).
 
@@ -20,7 +28,11 @@ The USB port on the teensy powers the unit and sends USB midi messages, and ther
 ## Build guide
 First solder R1, R2, the teensy pin sockets, MIDI DIN socket, and the stereo jack sockets for the pedals. All of them go on the top of the board, as shown in the picture below. **Do not solder the foot switches yet**.
 
+![alt text](https://github.com/unit-cell/toes/blob/master/Images/board.png "toes board")
+
 Then screw the foot switches to the top panel. Solder short cables or resistor legs to the foot switch legs that will be connected to the PCB. These are the legs that *become connected when the foot switch is pressed*. Mount the PCB to the top panel with the 22 mm spacers (I used a 20 mm spacer + a nut), and solder the wire/legs to the pads highlighted by the white mark on the silkscreen.
+
+![alt text](https://github.com/unit-cell/toes/blob/master/Images/top_assemply.png "top assembly")
 
 You can trim the long legs on the bottom of the board if you are using nuts as spacers for the bottom panel. Assemble these and you are done!
 
