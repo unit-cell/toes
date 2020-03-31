@@ -1,6 +1,4 @@
 # toes
-NOTE: the V1 board is still on its way to me as of 23/03/2020, so still untested!
-
 A device that sends USB and DIN MIDI messages using four footswitches, a sustain pedal and an expression pedal as the interface. This project is a very easy DIY build that consists of very few through-hole components, recommended for beginners!
 
 ## Software
@@ -18,4 +16,14 @@ The expression pedal sends a MIDI CC message. This design carries 5V on the tip,
 
 ## USB and DIN midi
 The USB port on the teensy powers the unit and sends USB midi messages, and there is also a DIN MIDI out socket.
+
+## Build guide
+First solder R1, R2, the teensy pin sockets, MIDI DIN socket, and the stereo jack sockets for the pedals. All of them go on the top of the board, as shown in the picture below. **Do not solder the foot switches yet**.
+
+Then screw the foot switches to the top panel. Solder short cables or resistor legs to the foot switch legs that will be connected to the PCB. These are the legs that *become connected when the foot switch is pressed*. Mount the PCB to the top panel with the 22 mm spacers (I used a 20 mm spacer + a nut), and solder the wire/legs to the pads highlighted by the white mark on the silkscreen.
+
+You can trim the long legs on the bottom of the board if you are using nuts as spacers for the bottom panel. Assemble these and you are done!
+
+Note about foot switches: it is possible to use any momentary foot switch with enough clearance to fit between the top panel and the board. Just make sure to wire it to the holes marked with a white rectangle, so that these become connected when pressing the switch.
+
 
