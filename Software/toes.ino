@@ -23,19 +23,20 @@ Bounce sus_pedal = Bounce(18, 10); // debounce pin 18, 10 ms debounce time
 Bounce jack_check_sus = Bounce(17, 5); // debounce pin 17, 5 ms debounce time
 
 void setup() {
- // switches
- pinMode(2, INPUT_PULLUP);  // SW1
- pinMode(3, INPUT_PULLUP);  // SW2
- pinMode(4, INPUT_PULLUP);  // SW3
- pinMode(5, INPUT_PULLUP);  // SW4
+  MIDI.begin();
+  // switches
+  pinMode(2, INPUT_PULLUP);  // SW1
+  pinMode(3, INPUT_PULLUP);  // SW2
+  pinMode(4, INPUT_PULLUP);  // SW3
+  pinMode(5, INPUT_PULLUP);  // SW4
    
- // expression pedal
- pinMode(19, INPUT_PULLUP); // jack_check_exp, LOW when no jack
- pinMode(A6, INPUT); // read voltage on wiper pin
+  // expression pedal
+  pinMode(19, INPUT_PULLUP); // jack_check_exp, LOW when no jack
+  pinMode(A6, INPUT); // read voltage on wiper pin
 
- // sustain pedal
- pinMode(17, INPUT_PULLUP); // jack_check_sus, LOW when no jack
- pinMode(18, INPUT_PULLUP); // LOW when pressed
+  // sustain pedal
+  pinMode(17, INPUT_PULLUP); // jack_check_sus, LOW when no jack
+  pinMode(18, INPUT_PULLUP); // LOW when pressed
 }
 
 void loop() {
