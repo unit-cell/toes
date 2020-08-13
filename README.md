@@ -26,7 +26,7 @@ The expression pedal sends a MIDI CC message. This design carries 5V on the tip,
 The USB port on the teensy powers the unit and sends USB midi messages, and there is also a DIN MIDI out socket.
 
 ## Build guide
-First solder R1, R2, the teensy pin sockets, MIDI DIN socket, and the stereo jack sockets for the pedals. All of them go on the top of the board, as shown in the picture below. **Do not solder the foot switches yet**.
+First solder R1, R2, the teensy pin sockets, MIDI DIN socket, and the stereo jack sockets for the pedals. All of them go on the top of the board, as shown in the picture below. **Do not solder the foot switches yet, if you are are building toes with a MIDI DIN socket**.*
 
 ![alt text](https://github.com/unit-cell/toes/blob/master/Images/board.png "toes board")
 
@@ -38,4 +38,4 @@ You can trim the long legs on the bottom of the board if you are using nuts as s
 
 Note about foot switches: it is possible to use any momentary foot switch with enough clearance to fit between the top panel and the board. Just make sure to wire it to the holes marked with a white rectangle, so that these become connected when pressing the switch.
 
-
+*If you want a lower profile and don't need a MIDI DIN socket, you can get the footswitches listed in the BOM as FS5700SPMT2B2M2QE. These have solder pins instead of solder lugs and can be soldered directly on to the board.
